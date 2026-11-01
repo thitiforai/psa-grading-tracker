@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "site",
+  "rewrites": [
+    {
+      "source": "/data/portfolio.json",
+      "destination": "https://thitiforai.github.io/psa-grading-tracker/data/portfolio.json"
+    }
+  ]
+}
