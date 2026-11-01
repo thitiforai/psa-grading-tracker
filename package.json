@@ -1,0 +1,10 @@
+{
+  "name": "psa-grading-tracker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync.mjs",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=24" }
+}

@@ -1,0 +1,5 @@
+.env
+.env.*
+node_modules/
+# Generated in CI, published to Pages only
+site/data/portfolio.json

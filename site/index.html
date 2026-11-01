@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src https: data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>PSA Grading Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>PSA Grading Tracker</h1>
+      <p id="updated" class="muted"></p>
+    </div>
+  </header>
+  <div id="demo-banner" class="banner" hidden>ข้อมูลตัวอย่าง ไม่ใช่การ์ดจริง</div>
+  <div id="warnings"></div>
+
+  <main>
+    <section id="setup" class="panel" hidden>
+      <h2>ยังไม่มีข้อมูลการ์ด</h2>
+      <ol>
+        <li>ตั้ง <code>PSA_API_TOKEN</code> ใน GitHub: Settings → Secrets and variables → Actions</li>
+        <li>เพิ่มเลข cert ในไฟล์ <code>collection.json</code> บน GitHub</li>
+        <li>หน้านี้จะอัปเดตหลังจาก workflow ทำงานเสร็จ</li>
+      </ol>
+      <p><a href="?demo=1">ดูตัวอย่างหน้าตา</a></p>
+    </section>
+
+    <div id="content" hidden>
+      <section class="stats" id="stats" aria-label="สรุปภาพรวม"></section>
+
+      <div class="columns">
+        <section class="panel">
+          <h2>จำนวนการ์ดตามเกรด</h2>
+          <div id="grade-chart" class="chart"></div>
+        </section>
+        <section class="panel">
+          <h2>สถานะการส่งเกรด</h2>
+          <div id="orders"></div>
+        </section>
+      </div>
+
+      <section>
+        <div class="toolbar">
+          <h2>การ์ดทั้งหมด</h2>
+          <input id="search" type="search" placeholder="ค้นหาชื่อ ชุด หรือเลข cert" aria-label="ค้นหาการ์ด">
+          <select id="grade-filter" aria-label="กรองตามเกรด"></select>
+          <select id="sort" aria-label="เรียงลำดับ">
+            <option value="value">มูลค่าสูงสุด</option>
+            <option value="grade">เกรดสูงสุด</option>
+            <option value="name">ชื่อ ก-ฮ</option>
+          </select>
+        </div>
+        <div id="cards" class="cards"></div>
+        <p id="no-match" class="muted" hidden>ไม่พบการ์ดที่ตรงกับเงื่อนไข</p>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="detail" aria-labelledby="detail-title">
+    <button id="detail-close" class="close" aria-label="ปิด">×</button>
+    <div id="detail-body"></div>
+  </dialog>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

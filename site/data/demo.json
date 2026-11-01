@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-11-01T01:00:00.000Z",
+  "configured": true,
+  "pricingEnabled": true,
+  "warnings": [],
+  "orders": [
+    { "id": "••••4821", "kind": "order", "problem": false, "accountingHold": false, "gradesReady": false, "shipped": false,
+      "steps": [{ "name": "Arrived", "done": true }, { "name": "Order Prep", "done": true }, { "name": "Research & ID", "done": true }, { "name": "Grading", "done": false }, { "name": "Assembly", "done": false }, { "name": "QA Checks", "done": false }, { "name": "Shipped", "done": false }] },
+    { "id": "••••7306", "kind": "submission", "problem": false, "accountingHold": false, "gradesReady": true, "shipped": true,
+      "steps": [{ "name": "Arrived", "done": true }, { "name": "Order Prep", "done": true }, { "name": "Research & ID", "done": true }, { "name": "Grading", "done": true }, { "name": "Assembly", "done": true }, { "name": "QA Checks", "done": true }, { "name": "Shipped", "done": true }] }
+  ],
+  "cards": [
+    { "cert": "10000001", "year": "2000", "brand": "Demo Set", "cardNumber": "4", "subject": "ตัวอย่าง Dragon", "variety": "Holo", "gradeLabel": "GEM MT 10", "grade": 10, "population": 1203, "populationHigher": 0, "images": { "front": null, "back": null }, "value": 1850, "valueSource": "PriceCharting", "valueAt": "2026-11-01", "note": "" },
+    { "cert": "10000002", "year": "2016", "brand": "Demo Set", "cardNumber": "25", "subject": "ตัวอย่าง Mouse", "variety": "", "gradeLabel": "GEM MT 10", "grade": 10, "population": 8421, "populationHigher": 0, "images": { "front": null, "back": null }, "value": 320, "valueSource": "PriceCharting", "valueAt": "2026-11-01", "note": "" },
+    { "cert": "10000003", "year": "1999", "brand": "Demo Set", "cardNumber": "2", "subject": "ตัวอย่าง Turtle", "variety": "Holo", "gradeLabel": "MINT 9", "grade": 9, "population": 5120, "populationHigher": 410, "images": { "front": null, "back": null }, "value": 410, "valueSource": "PriceCharting", "valueAt": "2026-11-01", "note": "" },
+    { "cert": "10000004", "year": "2021", "brand": "Demo Set", "cardNumber": "101", "subject": "ตัวอย่าง Fox", "variety": "Alt Art", "gradeLabel": "MINT 9", "grade": 9, "population": 960, "populationHigher": 2210, "images": { "front": null, "back": null }, "value": 145, "valueSource": "กรอกเอง", "valueAt": "2026-10-15", "note": "" },
+    { "cert": "10000005", "year": "2003", "brand": "Demo Set", "cardNumber": "58", "subject": "ตัวอย่าง Owl", "variety": "", "gradeLabel": "MINT 9", "grade": 9, "population": 310, "populationHigher": 44, "images": { "front": null, "back": null }, "value": null, "valueSource": null, "valueAt": null, "note": "" },
+    { "cert": "10000006", "year": "1999", "brand": "Demo Set", "cardNumber": "15", "subject": "ตัวอย่าง Wizard", "variety": "1st Edition", "gradeLabel": "NM-MT 8", "grade": 8, "population": 2044, "populationHigher": 1730, "images": { "front": null, "back": null }, "value": 95, "valueSource": "PriceCharting", "valueAt": "2026-11-01", "note": "" }
+  ]
+}
